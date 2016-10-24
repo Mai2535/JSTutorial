@@ -5,24 +5,24 @@
 <title>JS Tutorial</title>
 </head>
 <body>
-<h1>JS Tutorial</h1>
+<h1>JSON&JS Tutorial</h1> <hr/>
 
-<input type="text" id="txtNumber" onblur="doCall();"  /> <br/> <br/>
-<button onclick="doCall();" >Test Number</button> <br></br>
-<span id="errMessage" ></span >
+<p id="demo"></p>
 
+<button onclick="displayJSONData();" >Get JSON</button>
 
 <!-- Import Script JS  -->
 <!-- <script src="js/jsx.js" ></script> -->
 <!-- Script JS  -->
 <script>
 	//alert( new Date().toString() );
-	window.onload = downScripts( "js/jsx.js" ) ;
+	window.onload = downScripts( "js/json.js" ) ;
 	function downScripts( fileScript ){
 		var element = document.createElement( "script" );
 		element.src =  fileScript ;
 		document.body.appendChild( element );
 	}
+	
 </script>
 </body>
 </html>
